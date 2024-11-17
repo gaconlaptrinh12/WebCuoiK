@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>son1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-banner">
+        Giảm <span class="highlight">30%</span> các sản phẩm dịp đại lễ 30/4 & 1/5
+    </div>
+    <header class="header">
+        <div class="logo">
+            <img src="./logo 1.png" alt="Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="./baitap4 (1)/baitap4.html">Trang chủ</a>
+            <a href="./page2/kinh.html">Giới thiệu</a>
+            <a href="./trang.html">Sản phẩm</a>
+            <a href="./trang2.html">Bộ sưu tập</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Tra cứu đơn</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+        <div class="actions">
+            <div class="icon search-icon"><img src="./tim.png" width="25px" alt="Search"></div>
+            <div class="icon cart-icon"><img src="./hang.png" width="25px" alt="Cart"></div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="#">Trang chủ</a> > <a href="#">Sản phẩm</a> > <span>Sản phẩm 1</span>
+    </div>
+    <div class="product-detail-container">
+        <div class="product-images">
+            <img src="./kinh1.1.png" alt="Main product image" class="main-image">
+            <div class="thumbnail-images">
+                <img src="./kinh2.png" alt="Thumbnail 1">
+                <img src="./kinh3.png" alt="Thumbnail 2">
+            </div>
+        </div>
+        <div class="product-info">
+            <h1>10K gold necklace with ECZ stones STYLE OF D.SELENE</h1>
+            <div class="product-tags">
+                <span class="tag">#SUMMER COLLECTION</span>
+            </div>
+
+            <div class="price-section">
+                <span class="current-price">5.801.400₫</span>
+                <span class="original-price">5.801.400₫</span>
+                <span class="discount">-20%</span>
+            </div>
+
+            <div class="quantity-section">
+                <label for="quantity">Quantity:</label>
+                <div class="quantity-control">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <input type="number" id="quantity" value="1" min="1" onchange="updateTotalPrice()">
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+            </div>
+          
+
+            <div class="product-options">
+                <div class="size-selector">
+                    <label>Select size</label>
+                    <select>
+                        <option>S</option>
+                        <option>L</option>
+                    </select>
+                </div>
+                <div class="color-selector">
+                    <label>Select color</label>
+                    <div class="color-options">
+                        <img src="./kinh4.png" alt="Color 1">
+                        <img src="./kinh5.png" alt="Color 2">
+                        <img src="./kinh5.png" alt="Color 2">
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="add-to-cart">ADD TO CART</button>
+                <button class="buy-now">BUY NOW</button>
+            </div>
+            <div class="spec-details" id="spec-details">
+                <h3>Spec & Details <span class="icon-right close-icon" onclick="toggleSection('spec-details-content')">x</span></h3>
+                <div id="spec-details-content" class="toggle-content">
+                    <p>Simple and elegant, this curved pendant has a modern yet timeless aesthetic. The Tiffany T smile collection embodies the world’s most universal gesture for happiness and the connections it creates. Layer this delicate pendant with other Tiffany pendants of varying sizes and lengths for a unique look.</p>
+                </div>
+            </div>
+            <div class="additional-info" id="additional-info">
+                <h3>Delivery & Notice <span class="icon-right expand-icon" onclick="toggleSection('additional-info-content')">+</span></h3>
+                <div id="additional-info-content" class="toggle-content">
+                    <p>Xin chào :))</p>
+                </div>
+            </div>
+            <div class="model-images">
+                <img src="./kinhtrai.png" alt="Model 1">
+                <img src="./trai1.png" alt="Model 2">
+                <img src="./trai2.png" alt="Model 3">
+                <img src="./trai3.png" alt="Model 4">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Liên kết tệp script.js -->
+
+    <div class="review-section">
+        <h2>Review (12)</h2>
+        <div class="review-container">
+            <div class="review-left">
+                <div class="rating-star">
+                    <span class="star"><img src="./sao.png" alt=""></span>
+                    <span class="rating-value">4.8</span>
+                </div>
+                <p class="review-percentage">100% of buyers liked this product.</p>
+                <button class="review-button">WRITE A REVIEW</button>
+            </div>
+
+            <div class="divider"></div> <!-- Đường kẻ giữa -->
+
+            <div class="review-right">
+                <div class="rating-breakdown">
+                    <div class="rating-row">
+                        <span>Very good</span>
+                        <div class="bar">
+                            <div class="bar-filled" style="width: 90%;"></div>
+                        </div>
+                        <span class="review-count">11</span>
+                    </div>
+                    <div class="rating-row">
+                        <span>I like it</span>
+                        <div class="bar">
+                            <div class="bar-filled" style="width: 10%;"></div>
+                        </div>
+                        <span class="review-count">1</span>
+                    </div>
+                    <div class="rating-row">
+                        <span>Average</span>
+                        <div class="bar">
+                            <div class="bar-filled" style="width: 0%;"></div>
+                        </div>
+                        <span class="review-count">0</span>
+                    </div>
+                    <div class="rating-row">
+                        <span>So-so</span>
+                        <div class="bar">
+                            <div class="bar-filled" style="width: 0%;"></div>
+                        </div>
+                        <span class="review-count">0</span>
+                    </div>
+                    <div class="rating-row">
+                        <span>Not so good</span>
+                        <div class="bar">
+                            <div class="bar-filled" style="width: 0%;"></div>
+                        </div>
+                        <span class="review-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="photo-section">
+        <div class="photo-header">
+            <h3>Photos & Videos (30)</h3>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="photo-gallery">
+            <img src="./den1.png" alt="Photo 1">
+            <img src="./den2.png" alt="Photo 2">
+            <img src="./den3.png" alt="Photo 3">
+            <img src="./den4.png" alt="Photo 4">
+            <img src="./den5.png" alt="Photo 5">
+            <img src="./girl.png" alt="Photo 6">
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <div class="filter-bar">
+            <select>
+                <option>Rating</option>
+            </select>
+            <select>
+                <option>Age Group</option>
+            </select>
+        </div>
+
+        <!-- Đánh giá 1 -->
+        <div class="review-item">
+            <div class="review-header">
+                <img src="./Ellipse 1.png" alt="Reviewer" class="reviewer-img">
+                <div class="reviewer-info">
+                    <p class="reviewer-name">299602635***</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-time">18h02' 25/05/2024</p>
+                </div>
+            </div>
+            <p class="review-content">Simple and elegant, this curved pendant has a modern yet timeless aesthetic. The Tiffany T smile collection embodies the world's most universal gesture for happiness and the connections it creates.</p>
+            <div class="review-images">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./ko.png" alt="">
+                <img src="./trang.png" alt="">
+                <img src="./+5.png" alt="">
+            </div>
+        </div>
+
+        <!-- Đánh giá 2 -->
+        <div class="review-item">
+            <div class="review-header">
+                <img src="./Ellipse 1.png" alt="Reviewer" class="reviewer-img">
+                <div class="reviewer-info">
+                    <p class="reviewer-name">299602635***</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-time">18h02' 25/05/2024</p>
+                </div>
+            </div>
+            <p class="review-content">Simple and elegant, this curved pendant has a modern yet timeless aesthetic. The Tiffany T smile collection embodies the world's most universal gesture for happiness and the connections it creates.</p>
+            <div class="review-images">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./+5.png" alt="">
+            </div>
+        </div>
+
+        <!-- Đánh giá 3 -->
+        <div class="review-item">
+            <div class="review-header">
+                <img src="./Ellipse 1.png" alt="Reviewer" class="reviewer-img">
+                <div class="reviewer-info">
+                    <p class="reviewer-name">299602635***</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-time">18h02' 25/05/2024</p>
+                </div>
+            </div>
+            <p class="review-content">Simple and elegant, this curved pendant has a modern yet timeless aesthetic. The Tiffany T smile collection embodies the world's most universal gesture for happiness and the connections it creates.</p>
+            <div class="review-images">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./+5.png" alt="">
+            </div>
+        </div>
+
+        <!-- Đánh giá 4 -->
+        <div class="review-item">
+            <div class="review-header">
+                <img src="./Ellipse 1.png" alt="Reviewer" class="reviewer-img">
+                <div class="reviewer-info">
+                    <p class="reviewer-name">299602635***</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-time">18h02' 25/05/2024</p>
+                </div>
+            </div>
+            <p class="review-content">Simple and elegant, this curved pendant has a modern yet timeless aesthetic. The Tiffany T smile collection embodies the world's most universal gesture for happiness and the connections it creates.</p>
+            <div class="review-images">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./+5.png" alt="">
+            </div>
+        </div>
+
+        <!-- Đánh giá 5 -->
+        <div class="review-item">
+            <div class="review-header">
+                <img src="./Ellipse 1.png" alt="Reviewer" class="reviewer-img">
+                <div class="reviewer-info">
+                    <p class="reviewer-name">299602635***</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="review-time">18h02' 25/05/2024</p>
+                </div>
+            </div>
+            <p class="review-content">Simple and elegant, this curved pendant has a modern yet timeless aesthetic. The Tiffany T smile collection embodies the world's most universal gesture for happiness and the connections it creates.</p>
+            <div class="review-images">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./trang.png" alt="Review Image">
+                <img src="./+5.png" alt="">
+            </div>
+        </div>
+
+        <a href="#" class="see-more">See More</a>
+    </div>
+
+    <div class="product-section">
+        <h2>Sản phẩm cùng danh mục</h2>
+        <div class="product-grid">
+            <!-- Sản phẩm 1 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="rating">4.8★ (130)</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <img src="./to.png" alt="Product 1" class="product-image">
+                <div class="product-thumbnails">
+                    <img src="./tochan.png" alt="Thumbnail 1-1">
+                    <img src="./thuong.png" alt="Thumbnail 1-2">
+                    <img src="./thuong.png" alt="Thumbnail 1-3">
+                </div>
+                <div class="product-title">[Kool V22039] Gọng kính mắt nữ chính hãng</div>
+                <div class="product-price">
+                    <span class="current-price">445.000₫</span>
+                    <span class="original-price">495.000₫</span>
+                </div>
+                <span class="discount-badge">-20%</span>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="rating">4.8★ (130)</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <img src="./to.png" alt="Product 1" class="product-image">
+                <div class="product-thumbnails">
+                    <img src="./tochan.png" alt="Thumbnail 1-1">
+                    <img src="./thuong.png" alt="Thumbnail 1-2">
+                    <img src="./thuong.png" alt="Thumbnail 1-3">
+                </div>
+                <div class="product-title">[Kool V22039] Gọng kính mắt nữ chính hãng</div>
+                <div class="product-price">
+                    <span class="current-price">445.000₫</span>
+                    <span class="original-price">495.000₫</span>
+                </div>
+                <span class="discount-badge">-20%</span>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="rating">4.8★ (130)</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <img src="./to.png" alt="Product 1" class="product-image">
+                <div class="product-thumbnails">
+                    <img src="./tochan.png" alt="Thumbnail 1-1">
+                    <img src="./thuong.png" alt="Thumbnail 1-2">
+                    <img src="./thuong.png" alt="Thumbnail 1-3">
+                </div>
+                <div class="product-title">[Kool V22039] Gọng kính mắt nữ chính hãng</div>
+                <div class="product-price">
+                    <span class="current-price">445.000₫</span>
+                    <span class="original-price">495.000₫</span>
+                </div>
+                <span class="discount-badge">-20%</span>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="rating">4.8★ (130)</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <img src="./to.png" alt="Product 1" class="product-image">
+                <div class="product-thumbnails">
+                    <img src="./tochan.png" alt="Thumbnail 1-1">
+                    <img src="./thuong.png" alt="Thumbnail 1-2">
+                    <img src="./thuong.png" alt="Thumbnail 1-3">
+                </div>
+                <div class="product-title">[Kool V22039] Gọng kính mắt nữ chính hãng</div>
+                <div class="product-price">
+                    <span class="current-price">445.000₫</span>
+                    <span class="original-price">495.000₫</span>
+                </div>
+                <span class="discount-badge">-20%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <h2>Có thể bạn quan tâm</h2>
+        <div class="product-grid">
+            <!-- Sản phẩm 5 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="rating">4.8★ (130)</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <img src="./to.png" alt="Product 1" class="product-image">
+                <div class="product-thumbnails">
+                    <img src="./tochan.png" alt="Thumbnail 1-1">
+                    <img src="./thuong.png" alt="Thumbnail 1-2">
+                    <img src="./thuong.png" alt="Thumbnail 1-3">
+                </div>
+                <div class="product-title">[Kool V22039] Gọng kính mắt nữ chính hãng</div>
+                <div class="product-price">
+                    <span class="current-price">445.000₫</span>
+                    <span class="original-price">495.000₫</span>
+                </div>
+                <span class="discount-badge">-20%</span>
+            </div>
+
+            <!-- Sản phẩm 6 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="rating">4.8★ (130)</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <img src="./to.png" alt="Product 1" class="product-image">
+                <div class="product-thumbnails">
+                    <img src="./tochan.png" alt="Thumbnail 1-1">
+                    <img src="./thuong.png" alt="Thumbnail 1-2">
+                    <img src="./thuong.png" alt="Thumbnail 1-3">
+                </div>
+                <div class="product-title">[Kool V22039] Gọng kính mắt nữ chính hãng</div>
+                <div class="product-price">
+                    <span class="current-price">445.000₫</span>
+                    <span class="original-price">495.000₫</span>
+                </div>
+                <span class="discount-badge">-20%</span>
+            </div>
+
+            <!-- Sản phẩm 7 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="rating">4.8★ (130)</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <img src="./to.png" alt="Product 1" class="product-image">
+                <div class="product-thumbnails">
+                    <img src="./tochan.png" alt="Thumbnail 1-1">
+                    <img src="./thuong.png" alt="Thumbnail 1-2">
+                    <img src="./thuong.png" alt="Thumbnail 1-3">
+                </div>
+                <div class="product-title">[Kool V22039] Gọng kính mắt nữ chính hãng</div>
+                <div class="product-price">
+                    <span class="current-price">445.000₫</span>
+                    <span class="original-price">495.000₫</span>
+                </div>
+                <span class="discount-badge">-20%</span>
+            </div>
+
+            <!-- Sản phẩm 8 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="rating">4.8★ (130)</span>
+                    <span class="new-badge">New</span>
+                </div>
+                <img src="./to.png" alt="Product 1" class="product-image">
+                <div class="product-thumbnails">
+                    <img src="./tochan.png" alt="Thumbnail 1-1">
+                    <img src="./thuong.png" alt="Thumbnail 1-2">
+                    <img src="./thuong.png" alt="Thumbnail 1-3">
+                </div>
+                <div class="product-title">[Kool V22039] Gọng kính mắt nữ chính hãng</div>
+                <div class="product-price">
+                    <span class="current-price">445.000₫</span>
+                    <span class="original-price">495.000₫</span>
+                </div>
+                <span class="discount-badge">-20%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="large-image">
+            <img src="./tk.png" alt="Large Image">
+        </div>
+        <div class="small-images">
+            <div class="small-image">
+                <img src="./doi1.png" alt="Small Image 1">
+            </div>
+            <div class="small-image">
+                <img src="./me.png" alt="Small Image 2">
+            </div>
+            <div class="small-image">
+                <img src="./air.png" alt="Small Image 3">
+            </div>
+            <div class="small-image">
+                <img src="./doi.png" alt="Small Image 4">
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-section">
+        <div class="left-section">
+            <img src="./logo 1.png" alt="Logo" class="logo">
+            <p>Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
+            <button class="feedback-button">ĐÓNG GÓP Ý KIẾN</button>
+        </div>
+        <div class="middle-section">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon"><img src="./goi.png" alt=""></span>
+                    <div>
+                        <p class="contact-title">Hotline</p>
+                        <p class="contact-detail">036.8523.966</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"><img src="./tn.png" alt=""></span>
+                    <div>
+                        <p class="contact-title">Email</p>
+                        <p class="contact-detail">hotro@kinhmatkool.vn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="social-media">
+                <span class="social-icon"><img src="./fb.png" alt=""></span> 
+                <span class="social-icon"><img src="./zl.png" alt=""></span> 
+                <span class="social-icon"><img src="./yt.png" alt=""></span> 
+                <span class="social-icon"><img src="./tik.png" width="25px" alt=""></span> 
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-section">
+            <div class="footer-column">
+                <h4>Giờ mở cửa</h4>
+                <p>Mon - Sun: 8:30 - 22:00</p>
+                <h4>Store Hà Nội</h4>
+                <p>115 Kim Mã, Quận Ba Đình, Hà Nội</p>
+                <img src="./map.png" alt="Map of Store Location" class="map-image">
+            </div>
+            <div class="footer-column">
+                <h4>Sản phẩm</h4>
+                <ul>
+                    <li>Gọng kính cận</li>
+                    <li>Gọng kính râm</li>
+                    <li>Tròng kính</li>
+                    <li>Phụ kiện</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Chính sách</h4>
+                <ul>
+                    <li>Khám mắt miễn phí</li>
+                    <li>Bảo hành</li>
+                    <li>Đổi trả</li>
+                    <li>Vận chuyển</li>
+                    <li>Thu cũ - Đổi mới</li>
+                    <li>Chính sách bảo mật</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Tin tức</h4>
+                <ul>
+                    <li>Bảo vệ mắt</li>
+                    <li>Kiến thức</li>
+                    <li>Sức khỏe</li>
+                    <li>Thời trang</li>
+                </ul>
+            </div>
+            <div class="footer-column legal-info">
+                <h4>Đại diện pháp luật</h4>
+                <p>Ông Nguyễn Văn A. Ngày cấp giấy phép: 14/08/2018.</p>
+                <p>Ngày hoạt động: 05/09/2029</p>
+                <img src="./dathongbao 1.png" alt="Bộ Công Thương" class="bo-cong-thuong-logo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2024 © Bản quyền thuộc về Kính mắt Kool</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>

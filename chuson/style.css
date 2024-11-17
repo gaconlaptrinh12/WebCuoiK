@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.announcement-bar {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.announcement-bar .highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-menu .active {
+    color: #0066ff;
+    font-weight: bold;
+    border-bottom: 2px solid #0066ff;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+}
+
+.icon img {
+    height: 20px;
+}
+
+.notification-dot {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.breadcrumb {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.breadcrumb .current-page {
+    color: #0066ff;
+    font-weight: bold;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Chiếm 80% chiều rộng màn hình */
+    gap: 20px;
+}
+
+.image {
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.image.large img,
+.image.small img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+.breadcrumb{
+    margin-top: 100px;
+}
+
+
+.nav-menu a {
+    text-decoration: none; /* Xóa dấu gạch chân */
+     /* Đặt màu chữ về màu đen hoặc màu bạn muốn */
+    font-size: 16px;
+}
+
+.nav-menu .active {
+    font-weight: bold;
+    border-bottom: none; /* Xóa gạch chân dưới */
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.image-top img {
+    width: 80%; /* Chiếm 80% chiều rộng màn hình */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    object-fit: cover;
+}
+
+.image-full img {
+    width: 100%; /* Chiếm 100% chiều rộng màn hình */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    object-fit: cover;
+}
+
+.center-text {
+    font-size: 20px;
+    color: #0066ff; /* Màu chữ xanh dương */
+    margin: 20px 0; /* Khoảng cách giữa các phần tử */
+    text-align: center;
+    width: 100%; /* Đảm bảo dòng chữ chiếm toàn bộ chiều rộng */
+}
+
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Hiển thị 4 cột */
+    gap: 20px;
+    width: 80%; /* Chiếm 80% chiều rộng màn hình */
+    margin: 20px auto; /* Căn giữa và thêm khoảng cách trên/dưới */
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.new-badge {
+    background-color: black;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.product-thumbnails img {
+    width: 30px;
+    height: auto;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+}
+
+.product-discount {
+    background-color: #0066ff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    gap: 5px; /* Điều chỉnh khoảng cách giữa các phần tử */
+}
+
+.product-header span,
+.product-header a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.new-badge {
+    margin-left: auto; /* Đẩy thẻ "New" về phía bên phải */
+    background-color: black;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+
+.product-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.product-thumbnails img {
+    width: 50px; /* Tăng kích thước chiều rộng */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+
+
+.image-container {
+    display: flex;
+    width: 80%; /* Chiếm 80% chiều rộng màn hình */
+    gap: 20px;
+}
+
+.image-large {
+    flex: 5; /* Chiếm 50% chiều rộng màn hình */
+}
+
+.image-large img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.image-grid {
+    display: grid;
+    flex: 5; /* Chiếm 50% chiều rộng màn hình */
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    grid-template-rows: repeat(2, 1fr); /* 2 hàng */
+    gap: 20px;
+}
+
+.image-small img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.image-container{
+    margin-top: 60px;
+}
+
+.image-wrapper {
+    width: 80%; /* Chiếm 80% chiều rộng màn hình */
+    margin: 20px auto; /* Căn giữa và thêm khoảng cách trên/dưới */
+}
+
+.image-wrapper img {
+    width: 100%; /* Chiều rộng ảnh chiếm toàn bộ chiều rộng thẻ chứa */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    border-radius: 8px; /* Thêm góc bo tròn (tuỳ chọn) */
+}
+
+
+
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    background-color: #e0f0ff; /* Màu nền cho phần liên hệ */
+}
+
+.logo-section {
+    flex: 2;
+}
+
+.logo {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feedback-button {
+    background-color: #ff9900; /* Màu cam nổi bật */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.info-section {
+    flex: 1;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 24px; /* Biểu tượng lớn hơn */
+}
+
+.social-media-section {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-container {
+    background-color: #ffffff; /* Màu nền trắng cho phần footer */
+    padding: 20px 40px;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 2px solid #0066cc; /* Đường viền dưới cho phân cách */
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.map-image,
+.certification-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px; /* Thêm góc bo tròn */
+}
+
+.legal-info p {
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #0066cc; /* Màu nền xanh đậm cho phần cuối */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contact-section{
+    margin-top: 70px;
+}
+.image-wrapper{
+    margin-top: 120px;
+}
+.breadcrumb{
+    margin-top: 40px;
+}
